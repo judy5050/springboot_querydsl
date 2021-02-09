@@ -8,9 +8,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 import study.querydsl.entity.Hello;
+import study.querydsl.entity.Member;
 import study.querydsl.entity.QHello;
 
 import javax.persistence.EntityManager;
+
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -37,5 +40,7 @@ class QuerydslApplicationTests {
 		assertThat(result.getId()).isEqualTo(hello.getId());
 
 	}
+
+
 
 }
